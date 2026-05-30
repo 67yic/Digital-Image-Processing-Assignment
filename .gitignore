@@ -1,0 +1,41 @@
+# =========================================================================
+# 数字图像处理大作业 - Git 忽略文件配置
+# =========================================================================
+
+# 1. 数据集 (非常重要！UTKFace 包含数千张图片，体积过大且文件过多，绝对不能上传到 GitHub)
+UTKFace/
+UTKFace_proc/
+
+# 2. 预训练模型与大文件
+# 提示：models 文件夹下的 mobilenet_age.pth (17MB) 和 svr_model.pkl (4.3MB) 均小于 GitHub 100MB 限制。
+# 如果你想将模型文件一同分享在 GitHub 上，可以保持下面两行被注释的状态。
+# 如果你希望保持 GitHub 仓库轻量，想把模型放百度网盘/云盘分享，可以取消下面两行的注释以忽略 models 文件夹：
+# models/
+
+# 3. 开发工具与 IDE 配置文件
+.claude/
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 4. Python 缓存与虚拟环境
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+.ipynb_checkpoints/
+
+# 5. 操作系统临时文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+[Dd]ownloads/
